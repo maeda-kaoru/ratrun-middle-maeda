@@ -5,7 +5,14 @@
         link.text
       }}</nuxt-link>
     </div>
-    <div class="sp-menu"></div>
+    <div class="sp-menu">
+      <!-- <AppMobilemenu /> -->
+      <div class="mobile-menu" style="border: solid">
+        <nuxt-link v-for="(link, key) in links" :key="key" :to="link.to">{{
+          link.text
+        }}</nuxt-link>
+      </div>
+    </div>
   </header>
 </template>
 
@@ -15,16 +22,24 @@ export default {
     const links = reactive([
       { text: "ホーム", to: "#" },
       { text: "私達について", to: "#" },
-      { text: "ホーム", to: "#" },
-      { text: "ホーム", to: "#" },
-      { text: "ホーム", to: "#" },
+      { text: "選ばれる理由", to: "#" },
+      { text: "ワークフロー", to: "#" },
+      { text: "FAQ", to: "#" },
+      { text: "事例紹介", to: "#" },
+      { text: "会社概要", to: "#" },
+      { text: "お問合わせ・お見積", to: "#" },
+      { text: "個人情報保護法について", to: "#" },
     ]);
     return { links };
   },
+  //   import { AppMobilemenu } from "../components/molecules/AppMobilemenu";
+
+  // export default {
+  // components: { AppMobilemenu },
 };
 </script>
 
-<style scoped>
+<style lang='scss' scoped>
 header {
   padding: 0 0px;
   height: 80px;
@@ -52,8 +67,25 @@ header {
 .header-right-title {
   font-size: 70px;
 }
-
-.sp-menu {
-  position: fixed;
+@include tablet {
+  .sp-menu {
+    position: fixed;
+    width: 100%;
+    height: 730px;
+  }
+  .sp-menu a {
+    text-decoration: none;
+    color: #000;
+  }
+  .mobile-menu {
+    width: 80%;
+    height: 650px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 50px;
+    padding-top: 50px;
+  }
 }
 </style>
