@@ -1,13 +1,11 @@
 <template>
-  <mobile-header>
-    <div class="sp-menu">
-      <div class="mobile-menu" style="border: solid">
-        <nuxt-link v-for="(link, key) in links" :key="key" :to="link.to">{{
-          link.text
-        }}</nuxt-link>
-      </div>
+  <div class="sp-menu">
+    <div class="mobile-menu" style="border: solid">
+      <nuxt-link v-for="(link, key) in links" :key="key" :to="link.to">{{
+        link.text
+      }}</nuxt-link>
     </div>
-  </mobile-header>
+  </div>
 </template>
 
 <script>
@@ -31,11 +29,14 @@ export default {
 
 <style lang='scss' scoped>
 .sp-menu {
-  position: fixed;
+  // position: fixed;
   width: 380px;
-  height: 72opx;
+  height: 720px;
+  z-index: 10;
+  top: 0;
+  left: 0;
 }
-.mobile-menu{
+.mobile-menu {
   width: 80%;
   height: 80%;
   border: #000;

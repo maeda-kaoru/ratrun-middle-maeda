@@ -5,19 +5,16 @@
         link.text
       }}</nuxt-link>
     </div>
-    <div class="sp-menu">
-      <!-- <AppMobilemenu /> -->
-      <div class="mobile-menu" style="border: solid">
-        <nuxt-link v-for="(link, key) in links" :key="key" :to="link.to">{{
-          link.text
-        }}</nuxt-link>
-      </div>
-    </div>
+    <AppMobilemenu />
   </header>
 </template>
 
 <script>
+import { AppMobileMenu } from "../../molecules/Menu";
+
 export default {
+  components: { AppMobileMenu },
+
   setup() {
     const links = reactive([
       { text: "ホーム", to: "#" },
@@ -32,10 +29,6 @@ export default {
     ]);
     return { links };
   },
-  //   import { AppMobilemenu } from "../components/molecules/AppMobilemenu";
-
-  // export default {
-  // components: { AppMobilemenu },
 };
 </script>
 
