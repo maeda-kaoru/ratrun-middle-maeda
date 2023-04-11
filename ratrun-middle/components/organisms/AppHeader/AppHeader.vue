@@ -4,8 +4,14 @@
       <nuxt-link v-for="(link, key) in links" :key="key" :to="link.to">{{
         link.text
       }}</nuxt-link>
+      <nuxt-link v-for="(link, key) in secondLinks" :key="key" :to="link.to">{{
+        link.text
+      }}</nuxt-link>
     </div>
-    <AppMobilemenu />
+    <button class="img-area" @click="clickMenu">
+      <img src="../../../assets/img/hamburger.svg" />
+    </button>
+    <AppMobileMenu v-if="isMenu" />
   </header>
 </template>
 
@@ -16,6 +22,10 @@ export default {
   components: { AppMobileMenu },
 
   setup() {
+    const clickMenu = () => {
+      isMenu.value = !isMenu.value;
+    };
+    const isMenu = ref(false);
     const links = reactive([
       { text: "ホーム", to: "#" },
       { text: "私達について", to: "#" },
@@ -25,14 +35,28 @@ export default {
       { text: "事例紹介", to: "#" },
       { text: "会社概要", to: "#" },
       { text: "お問合わせ・お見積", to: "#" },
-      { text: "個人情報保護法について", to: "#" },
     ]);
-    return { links };
+    const secondLinks = reactive([{ text: "個人情報保護法について", to: "#" }]);
+    return { links, clickMenu, isMenu, secondLinks };
   },
 };
 </script>
 
 <style lang='scss' scoped>
+.img-area {
+  width: 100%;
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}
+img {
+  width: 15%;
+  display: flex;
+  margin-left: auto;
+  margin-right: 20px;
+}
 header {
   padding: 0 0px;
   height: 80px;
