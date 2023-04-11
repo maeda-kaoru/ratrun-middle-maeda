@@ -4,9 +4,6 @@
       <nuxt-link v-for="(link, key) in links" :key="key" :to="link.to">{{
         link.text
       }}</nuxt-link>
-      <nuxt-link v-for="(link, key) in secondLinks" :key="key" :to="link.to">{{
-        link.text
-      }}</nuxt-link>
     </div>
     <button class="img-area" @click="clickMenu">
       <img src="../../../assets/img/hamburger.svg" />
@@ -26,6 +23,7 @@ export default {
       isMenu.value = !isMenu.value;
     };
     const isMenu = ref(false);
+
     const links = reactive([
       { text: "ホーム", to: "#" },
       { text: "私達について", to: "#" },
@@ -36,8 +34,8 @@ export default {
       { text: "会社概要", to: "#" },
       { text: "お問合わせ・お見積", to: "#" },
     ]);
-    const secondLinks = reactive([{ text: "個人情報保護法について", to: "#" }]);
-    return { links, clickMenu, isMenu, secondLinks };
+
+    return { links, clickMenu, isMenu };
   },
 };
 </script>
@@ -70,30 +68,23 @@ header {
   @include tablet {
     display: none;
   }
+  a {
+    text-decoration: none;
+    color: #000;
+  }
 }
 
-.menu a {
-  text-decoration: none;
-  color: #000;
-}
-.header-right {
-  width: 50%;
-  padding-right: 50px;
-  margin-left: auto;
-}
-.header-right-title {
-  font-size: 70px;
-}
 @include tablet {
   .sp-menu {
     position: fixed;
     width: 100%;
     height: 730px;
+    a {
+      text-decoration: none;
+      color: #000;
+    }
   }
-  .sp-menu a {
-    text-decoration: none;
-    color: #000;
-  }
+
   .mobile-menu {
     width: 80%;
     height: 650px;
@@ -101,8 +92,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding-left: 50px;
-    padding-top: 50px;
+    padding: 50 0 0 50px;
   }
 }
 </style>

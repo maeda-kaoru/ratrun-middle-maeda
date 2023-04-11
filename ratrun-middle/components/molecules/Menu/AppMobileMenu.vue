@@ -38,11 +38,11 @@ export default {
   width: 100%;
   height: 730px;
   background: white;
-}
-.sp-menu a {
-  text-decoration: none;
-  color: #000;
-  padding: 10px;
+  a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+  }
 }
 .mobile-menu {
   width: 80%;
