@@ -22,17 +22,15 @@
       </div>
       <div class="footer-right">
         <div class="address">
-          <p>
+          <p class="pd-20">
             建築・建築デザイン・原状回復・内装解体・建物解体・アスベスト除去工事はウラシコにお任せください！
           </p>
-          <p>
+          <p class="sp-pd-20">
             <b>株式会社ウラシコ<br class="sp-br" />CYPHER （サイファー）</b>
-            <!-- <div class="space"></div> -->
-            <br />〒454-0982
-            <br />愛知県名古屋市中川区西伏屋2丁目617番地
-            <!-- <div class="space"></div> -->
-            <br />TEL: 052-655-4146
           </p>
+          <p class="margin-0">〒454-0982</p>
+          <p class="sp-pd-20">愛知県名古屋市中川区西伏屋2丁目617番地</p>
+          <p>TEL: 052-655-4146</p>
         </div>
         <div class="icon">
           <img src="../../../assets/img/icon-facebook.svg" />
@@ -166,7 +164,7 @@ footer {
   margin: 20px;
 
   @include tablet {
-    width: 80%;
+    width: 75%;
     height: 350px;
     padding: 20px;
     outline: none;
@@ -175,16 +173,18 @@ footer {
   }
   p {
     line-height: 2em;
+    margin: 0px;
+  }
+}
+.pd-20 {
+  padding-bottom: 20px;
+}
+.sp-pd-20 {
+  @include tablet {
+    padding-bottom: 20px;
   }
 }
 .sp-br {
-  display: none;
-  @include tablet {
-    display: block;
-  }
-}
-
-.space {
   display: none;
   @include tablet {
     display: block;
@@ -219,11 +219,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  @include tablet{
-    // padding: 20px;
-    height: 150px;
+  @include tablet {
+    height: 120px;
+    p {
+      padding: 0 40px 0 40px;
+    }
   }
-
 }
-
 </style>
