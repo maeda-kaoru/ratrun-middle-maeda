@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   ssr: false,
-
+  css: ["@/assets/scss/reset.css"],
   vite: {
     css: {
       preprocessorOptions: {
