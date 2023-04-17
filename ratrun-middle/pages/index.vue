@@ -333,7 +333,9 @@
       <p style="font-weight:bold; text-align: center;">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
       <p>タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイタイトルが入ります。タイトルが入ります。タイトルが入ります。トルが入ります。</p>
       </div>
-              <ButtonStyle1 class="_normal _font">お問合せ・お見積り</ButtonStyle1>
+<ButtonStyle1 text='お問合わせ・お見積もり' />
+<ButtonStyle1 text='hogehoge' borderRadius='none'>
+
     </section>
   </article>
 </template>
