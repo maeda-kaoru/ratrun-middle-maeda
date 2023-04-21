@@ -1,17 +1,19 @@
 <template>
-  <div class="AppVision">
+  <div class="design">
     <img src="../../../assets/img/phone.png" />
-    <p>{{ text }}</p>
-    <ButtonStyle1 text="詳しく見る" />
+    <div class="design-title">
+      <p>{{ title }}</p>
+    </div>
+    <div class="text-area">
+      <p>{{ text }}</p>
+    </div>
   </div>
 </template>
 
 <script>
-import { ButtonStyle1 } from "../../atoms/ButtonStyle1";
 export default {
-  components: { ButtonStyle1 },
-
   props: {
+    title: { type: String, default: "情報技術" },
     text: {
       type: String,
       default:
@@ -22,18 +24,25 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-.AppVision {
+.design {
   width: 100%;
+  line-height: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #d8d8d8;
   img {
     width: 100%;
     height: auto;
   }
-}
-p {
-padding: 50px 0 50px 0;
-  line-height: 2em;
+  &-title {
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+    text-align: center;
+  }
+  .text-area {
+    width: 80%;
+  }
 }
 </style>

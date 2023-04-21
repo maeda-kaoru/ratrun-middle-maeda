@@ -101,99 +101,24 @@
     </section>
     <section class="section3">
       <h2>事業目的<span class="mgr-10">VISION</span></h2>
-      <div class="vision">
-        <img src="../assets/img/phone.png" />
-        <AppVision />
-      </div>
-      <div class="vision">
-        <img src="../assets/img/phone.png" />
-        <AppVision />
-      </div>
-      <div class="vision">
-        <img src="../assets/img/phone.png" />
-        <AppVision />
-      </div>
+      <AppVision class="vision-sizing" />
+      <AppVision class="vision-sizing" />
+      <AppVision class="vision-sizing" />
     </section>
     <section class="section4">
       <h2>事業目的<span class="mgr-10">MISSION</span></h2>
-      <div class="mission">
-        <div class="mission-title">
-          <AppNumber>１</AppNumber>
-          <h3>技術確認</h3>
-        </div>
-        <img src="../assets/img/calendar.png" />
-        <p>
-          昨今、情報技術は目まぐるしい勢いで進化を続け、インターネットでは、1日に膨大な量の情報が飛び交っています。インターネットで現代人が1日に触れる情報量は江戸時代の1年分とも言われています。
-        </p>
-      </div>
-      <div class="mission">
-        <div class="mission-title">
-          <AppNumber>２</AppNumber>
-          <h3>技術確認</h3>
-        </div>
-        <img src="../assets/img/calendar.png" />
-        <p>
-          昨今、情報技術は目まぐるしい勢いで進化を続け、インターネットでは、1日に膨大な量の情報が飛び交っています。インターネットで現代人が1日に触れる情報量は江戸時代の1年分とも言われています。
-        </p>
-      </div>
-      <div class="mission">
-        <div class="mission-title">
-          <AppNumber>３</AppNumber>
-          <h3>技術確認</h3>
-        </div>
-        <img src="../assets/img/calendar.png" />
-        <p>
-          昨今、情報技術は目まぐるしい勢いで進化を続け、インターネットでは、1日に膨大な量の情報が飛び交っています。インターネットで現代人が1日に触れる情報量は江戸時代の1年分とも言われています。
-        </p>
-      </div>
-      <div class="mission">
-        <div class="mission-title">
-          <AppNumber>４</AppNumber>
-          <h3>技術確認</h3>
-        </div>
-        <img src="../assets/img/calendar.png" />
-        <p>
-          昨今、情報技術は目まぐるしい勢いで進化を続け、インターネットでは、1日に膨大な量の情報が飛び交っています。インターネットで現代人が1日に触れる情報量は江戸時代の1年分とも言われています。
-        </p>
-      </div>
+      <AppMission class="mission-sizing" number="１" />
+      <AppMission class="mission-sizing" number="２" />
+      <AppMission class="mission-sizing" number="３" />
+      <AppMission class="mission-sizing" number="４" />
     </section>
     <section class="section5">
       <h2>情報技術とデザインと思想</h2>
-      <div class="design">
-        <img src="../assets/img/phone.png" />
-        <h4>①情報技術</h4>
-        <p>
-          昨今、情報技術は目まぐるしい勢いで進化を続け、インターネットでは、1日に膨大な量の情報が飛び交っています。インターネットで現代人が1日に触れる情報量は江戸時代の1年分とも言われています。
-        </p>
-      </div>
-      <div class="design">
-        <img src="../assets/img/phone.png" />
-        <h4>②情報技術</h4>
-        <p>
-          昨今、情報技術は目まぐるしい勢いで進化を続け、インターネットでは、1日に膨大な量の情報が飛び交っています。インターネットで現代人が1日に触れる情報量は江戸時代の1年分とも言われています。
-        </p>
-      </div>
-      <div class="design">
-        <img src="../assets/img/phone.png" />
-        <h4>③情報技術</h4>
-        <p>
-          昨今、情報技術は目まぐるしい勢いで進化を続け、インターネットでは、1日に膨大な量の情報が飛び交っています。インターネットで現代人が1日に触れる情報量は江戸時代の1年分とも言われています。
-        </p>
-      </div>
-      <div class="design">
-        <img src="../assets/img/phone.png" />
-        <h4>④情報技術</h4>
-        <p>
-          昨今、情報技術は目まぐるしい勢いで進化を続け、インターネットでは、1日に膨大な量の情報が飛び交っています。インターネットで現代人が1日に触れる情報量は江戸時代の1年分とも言われています。
-        </p>
-      </div>
-      <div class="design">
-        <img src="../assets/img/phone.png" />
-        <h4>⑤情報技術</h4>
-        <p>
-          昨今、情報技術は目まぐるしい勢いで進化を続け、インターネットでは、1日に膨大な量の情報が飛び交っています。インターネットで現代人が1日に触れる情報量は江戸時代の1年分とも言われています。
-        </p>
-      </div>
+      <AppDesign class="design-sizing" title="①情報技術" />
+      <AppDesign class="design-sizing" title="②情報技術" />
+      <AppDesign class="design-sizing" title="③情報技術" />
+      <AppDesign class="design-sizing" title="④情報技術" />
+      <AppDesign class="design-sizing" title="⑤情報技術" />
     </section>
     <section class="section6">
       <h2>デザインの概要</h2>
@@ -275,79 +200,66 @@
     <section class="section8">
       <h2>代表デザイン事例</h2>
       <div class="design-button">
-        <ButtonStyle1 class="_normal _no-horn">店舗</ButtonStyle1>
-        <ButtonStyle1 class="_normal _no-horn">テナント</ButtonStyle1>
-        <ButtonStyle1 class="_normal _no-horn">オフィス</ButtonStyle1>
-        <ButtonStyle1 class="_normal _no-horn">店舗</ButtonStyle1>
-        <ButtonStyle1 class="_normal _no-horn">什器</ButtonStyle1>
+        <ButtonStyle1 text="店舗" borderRadius="none" fontsize="24px" />
+        <ButtonStyle1 text="テナント" borderRadius="none" fontsize="24px" />
+        <ButtonStyle1 text="オフィス" borderRadius="none" fontsize="24px" />
+        <ButtonStyle1 text="インテリア" borderRadius="none" fontsize="24px" />
+        <ButtonStyle1 text="什器" borderRadius="none" fontsize="24px" />
       </div>
       <h2>店の名前が入ります</h2>
-      <div class="design-img">
-        <img src="../assets/img/lamp-color.png" />
-        <div class="arrow-left">
-          <AppArrow>⬅︎</AppArrow>
-        </div>
-        <div class="arrow-right">
-          <AppArrow>➡</AppArrow>
-        </div>
+      <div class="AppSlide-area">
+        <AppSlide class="AppSlide" />
       </div>
-      <div class="design-show">
-        <img src="../assets/img/lamp-color.png" />
-        <img src="../assets/img/lamp-color.png" />
-        <img src="../assets/img/lamp-color.png" />
-        <img src="../assets/img/lamp-color.png" />
-      </div>
-      <p>
+      <p class="border">
         スライドスライドスライドスライドスライドスライドスライド昨今、情報技術は目まぐるしい勢いで進化を続け、インターネットでは、1日に膨大な量の情報が飛び交っています。インターネットで現代人が1日に触れる情報量は江戸時代の1年分とも言われています。
       </p>
       <h3>製作時のポイント</h3>
-      <div class="accordion" @click="clickAccordion">
-        <h3>製作時のポイント（アコーディオン）</h3>
-        <p>＋</p>
-      </div>
-      <div class="accordion-open" v-if="isAccordion">
-        <p>
-          アコーディオン展開イメージ昨今、情報技術は目まぐるしい勢いで進化を続け、インターネットでは、1日に膨大な量の情報が飛び交っています。インターネットで現代人が1日に触れる情報量は江戸時代の1年分とも言われています。
-        </p>
-      </div>
-      <div class="accordion" @click="clickAccordion">
-        <h3>製作時のポイント（アコーディオン）</h3>
-        <p>＋</p>
-      </div>
-      <div class="accordion-open" v-if="isAccordion">
-        <p>
-          アコーディオン展開イメージ昨今、情報技術は目まぐるしい勢いで進化を続け、インターネットでは、1日に膨大な量の情報が飛び交っています。インターネットで現代人が1日に触れる情報量は江戸時代の1年分とも言われています。
-        </p>
-      </div>
-      <div class="accordion" @click="clickAccordion">
-        <h3>製作時のポイント（アコーディオン）</h3>
-        <p>＋</p>
-      </div>
-      <div class="accordion-open" v-if="isAccordion">
-        <p>
-          アコーディオン展開イメージ昨今、情報技術は目まぐるしい勢いで進化を続け、インターネットでは、1日に膨大な量の情報が飛び交っています。インターネットで現代人が1日に触れる情報量は江戸時代の1年分とも言われています。
-        </p>
-      </div>
+      <AppAccordion class="accordion-sizing" />
+      <AppAccordion class="accordion-sizing" />
+      <AppAccordion class="accordion-sizing" />
+      <ButtonStyle1
+        text="お問合わせ・お見積もり"
+        width="300px"
+        height="60px"
+        fontsize="22px"
+      />
       <div class="future">
-      <h2>未来の展望</h2>
-      <p style="font-weight:bold; text-align: center;">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
-      <p>タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイタイトルが入ります。タイトルが入ります。タイトルが入ります。トルが入ります。</p>
+        <h3>未来の展望</h3>
+        <p class="future-title">
+          タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。
+        </p>
+        <p class="future-text">
+          タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入
+          ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイ
+          タイトルが入ります。タイトルが入ります。タイトルが入ります。トルが入ります。
+        </p>
       </div>
-<ButtonStyle1 text='お問合わせ・お見積もり' />
-<ButtonStyle1 text='hogehoge' borderRadius='none'>
-
     </section>
   </article>
 </template>
 
 <script>
 import { AppVision } from "../components/molecules/AppVision";
-import { AppNumber } from "../components/atoms/AppNumber";
+import { AppMission } from "../components/molecules/AppMission";
+import { AppDesign } from "../components/molecules/AppDesign";
+import { AppSlide } from "../components/molecules/AppSlide";
+
+import { AppAccordion } from "../components/molecules/AppAccordion";
 import { ButtonStyle1 } from "../components/atoms/ButtonStyle1";
 import { AppArrow } from "../components/atoms/AppArrow";
+import App from "../app.vue";
 
 export default {
-  components: { AppVision, AppNumber, ButtonStyle1, AppArrow },
+  components: {
+    AppVision,
+    AppMission,
+    AppDesign,
+    AppSlide,
+    AppAccordion,
+    ButtonStyle1,
+    AppArrow,
+    App,
+  },
 
   setup() {
     const clickAccordion = () => {
@@ -355,7 +267,7 @@ export default {
     };
     const isAccordion = ref(false);
 
-    return { isAccordion };
+    return { clickAccordion, isAccordion };
   },
 };
 </script>
@@ -391,8 +303,7 @@ article {
       width: 95%;
     }
   }
-}
-.pd-20 {
+  .pd-20 {
   padding-bottom: 20px;
   @include tablet {
     padding-bottom: none;
@@ -401,6 +312,7 @@ article {
 .mgr-10 {
   margin-left: 12px;
 }
+
 .sp {
   display: none;
   @include tablet {
@@ -412,9 +324,12 @@ article {
     display: none;
   }
 }
+}
+
 
 .top {
   position: relative;
+  z-index: 1;
   img {
     width: 100%;
     height: 700px;
@@ -449,13 +364,13 @@ article {
 
 .section1 {
   width: 100%;
-  height: 420px;
+  height:auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   @include tablet {
-    height: 600px;
+    height: auto;
   }
 }
 .section2 {
@@ -556,22 +471,17 @@ article {
   justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
+  padding-bottom: 50px;
   border-bottom: 4px solid #756d6d;
   @include tablet {
     gap: 20px;
   }
-}
-.vision {
-  width: 25%;
-  margin-bottom: 30px;
-  @include tablet {
-    width: 90%;
-  }
-  img {
-    width: 100%;
-  }
-  @include tablet {
-    width: 90%;
+
+  .vision-sizing {
+    width: 25%;
+    @include tablet {
+      width: 90%;
+    }
   }
 }
 .section4 {
@@ -581,36 +491,17 @@ article {
   justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
   border-bottom: 4px solid #756d6d;
   @include tablet {
     gap: 20px;
   }
-}
-.mission {
-  width: 20%;
-  display: flex;
-  justify-content: start;
-  flex-wrap: wrap;
-  @include tablet {
-    width: 90%;
+  .mission-sizing {
+    width: 20%;
+    @include tablet {
+      width: 90%;
+    }
   }
-  h3 {
-    font-size: 30px;
-    font-weight: normal;
-    margin: 0px;
-    width: 100%;
-  }
-  p {
-    width: 100%;
-  }
-  img {
-    width: 100%;
-  }
-}
-.mission-title {
-  width: 100%;
-  display: flex;
 }
 
 .section5 {
@@ -620,36 +511,19 @@ article {
   justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
+  padding-bottom: 50px;
   border-bottom: 4px solid #756d6d;
   @include tablet {
     gap: 20px;
   }
-}
-.design {
-  width: 25%;
-  height: auto;
-  background-color: #cccccc;
-  margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  @include tablet {
-    width: 90%;
-  }
-  img {
-    width: 100%;
-  }
-  @include tablet {
-    width: 90%;
-  }
-  h4 {
-    font-size: 30px;
-    font-weight: normal;
-    margin: 10px 0 0 0;
-    width: 100%;
-    text-align: center;
+  .design-sizing {
+    width: 25%;
+    @include tablet {
+      width: 90%;
+    }
   }
 }
+
 .section6 {
   width: 100%;
   height: auto;
@@ -749,111 +623,71 @@ article {
   height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding-bottom: 50px;
-  p {
-    width: 75%;
+  .border {
+    width: 80%;
     border: solid 1px;
-    padding: 20px;
+    padding: 15px;
   }
   h3 {
     width: 80%;
     font-size: 36px;
     border-bottom: solid 1px;
+    @include tablet {
+      font-size: 22px;
+    }
+  }
+  .design-button {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    @include tablet {
+      width: 90%;
+      gap: 15px;
+    }
   }
 }
-.design-button {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 80px;
-  @include tablet {
-    width: 90%;
-    gap: 15px;
-  }
-}
-.design-img {
-  width: 80%;
-  position: relative;
-
-  img {
-    width: 100%;
-  }
-}
-.arrow-left {
-  position: absolute;
-  top: 50%;
-  left: -3%;
-  @include tablet {
-    left: -5%;
-  }
-}
-.arrow-right {
-  position: absolute;
-  top: 50%;
-  left: 97%;
-  @include tablet {
-    left: 95%;
-  }
-}
-.design-show {
-  width: 80%;
-  padding-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  @include tablet {
-    width: 70%;
-    gap: 10px;
-  }
-  img {
-    width: 20%;
-  }
-}
-.accordion {
+.AppSlide-area {
   width: 80%;
   height: auto;
-  font-size: 30px;
-  background-color: #666666;
-  display: flex;
-  margin-bottom: 40px;
-  
-  h3 {
-    width: 90%;
-    color: white;
-    margin: 0;
-    padding: 0.2em 0.4em;
-    border: 0px;    @include tablet {
-font-size: 15px;
 }
 
-  }
-  p {
-    width: 10%;
-    color: white;
-    margin: 0;
-    padding: 0.2em 0.4em;
-    border: 0px;
-    text-align: end;
-        @include tablet {
-font-size: 15px;
-}
+.accordion-sizing {
+  width: 80%;
+  padding-bottom: 50px;
+  @include tablet {
+    padding-bottom: 30px;
   }
 }
-.future{
+
+.future {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  p{
-  width: 60%;
-  border: none;
-padding: 0px;
-margin: 0px;
-font-size: 14px;
+  h3 {
+    text-align: center;
+    border-bottom: none;
+  }
+  &-title {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    line-height: 5em;
+    @include tablet {
+      width: 80%;
+      line-height: 2em;
+    }
+  }
+  &-text {
+    width: 60%;
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
   }
 }
 </style>

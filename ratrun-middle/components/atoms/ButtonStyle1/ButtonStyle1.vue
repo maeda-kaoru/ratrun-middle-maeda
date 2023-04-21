@@ -1,7 +1,5 @@
 <template>
   <nuxt-link :to="to" class="link-button">{{ text }}</nuxt-link>
-    <!-- <nuxt-link :to="to" class="link-button">< slot ></nuxt-link> 　長文テキストや、拡張性の高い時にslotをつかう-->
-
 </template>
 
 <script>
@@ -12,7 +10,8 @@ export default {
     color: { type: String, default: "#123567" },
     width: { type: String, default: "160px" },
     height: { type: String, default: "40px" },
-    borderRadius: {type: String,default: '8px'},
+    borderRadius: { type: String, default: "8px" },
+    fontsize: { type: String, default: "16px" },
   },
 };
 </script>
@@ -27,8 +26,9 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  
+  text-decoration: none;
+  font-size: v-bind(fontsize);
+
   &:hover {
     opacity: 0.7;
   }
