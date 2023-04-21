@@ -68,161 +68,163 @@ export default {
 
 <style lang='scss' scoped>
 footer {
-  padding: 0 0px;
-}
-.footer-area {
-  color: white;
   width: 100%;
-  height: 450px;
-  background-color: #756d6d;
-  display: flex;
-  padding-top: 80px;
-  @include tablet {
-    height: 1200px;
-    flex-direction: column;
-    padding: 0px;
-  }
-}
-.logo {
-  width: 33%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  @include tablet {
-    width: 100%;
-    height: 250px;
-    gap: 20px;
-    padding: 30px 0px 30px 0px;
-  }
-  img {
-    width: 230px;
-    @include tablet {
-      width: 180px;
-    }
-  }
-}
-.menu {
-  width: 33%;
-  height: 150px;
-  display: flex;
-  @include tablet {
-    width: 100%;
-    height: 400px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  a {
-    text-decoration: none;
-    color: white;
-  }
-}
-
-.menu-left {
-  width: 700px;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-
-  @include tablet {
-    width: 60%;
-    height: 240px;
-  }
-}
-.menu-right {
-  width: 1000px;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  @include tablet {
-    width: 60%;
-    height: 150px;
-  }
-}
-.footer-right {
-  width: 33%;
-  display: flex;
-  flex-direction: column;
-  @include tablet {
-    width: 100%;
-    height: 400px;
-    flex-direction: none;
-    align-items: center;
-    justify-content: center;
-  }
-}
-.address {
-  width: 400px;
-  height: 270px;
-  padding: 10px;
-  border: 1px solid;
-  outline: 1px solid;
-  outline-offset: 5px;
-  margin: 20px;
-
-  @include tablet {
-    width: 75%;
-    height: 350px;
-    padding: 20px;
-    outline: none;
-    outline-offset: none;
-    margin: 0px;
-  }
-  p {
-    line-height: 2em;
-    margin: 0px;
-  }
-}
-.pd-20 {
-  padding-bottom: 20px;
-}
-.sp-pd-20 {
-  @include tablet {
+  height: auto;
+  padding: 0 0px;
+  .pd-20 {
     padding-bottom: 20px;
   }
-}
-.sp-br {
-  display: none;
-  @include tablet {
-    display: block;
+  .sp-pd-20 {
+    @include tablet {
+      padding-bottom: 20px;
+    }
   }
-}
-
-.icon {
-  width: 450px;
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-  margin-top: 20px;
-  @include tablet {
+  .sp-br {
     display: none;
+    @include tablet {
+      display: block;
+    }
   }
-  img {
-    width: 40px;
-  }
-}
 
-.img-area {
-  width: 100%;
-  @include tablet {
-    display: none;
+  .footer-area {
+    color: white;
+    width: 100%;
+    height: 450px;
+    background-color: #756d6d;
+    display: flex;
+    padding-top: 100px;
+    @include tablet {
+      height: 1200px;
+      flex-direction: column;
+      padding: 0px;
+    }
   }
-}
+  .logo {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    @include tablet {
+      width: 100%;
+      height: 250px;
+      gap: 20px;
+      padding: 30px 0px 30px 0px;
+    }
+    img {
+      width: 230px;
+      @include tablet {
+        width: 180px;
+      }
+    }
+  }
+  .menu {
+    width: 33%;
+    height: 150px;
+    display: flex;
+    @include tablet {
+      width: 100%;
+      height: 400px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    .menu-left {
+      width: 50%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      @include tablet {
+        width: 60%;
+        height: 240px;
+      }
+    }
+    .menu-right {
+      width: 50%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      @include tablet {
+        width: 60%;
+        height: 150px;
+      }
+    }
+  }
 
-.Copyright {
-  width: 100%;
-  height: 80px;
-  font-family: 小塚ゴシック Pr6N;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @include tablet {
-    height: 120px;
+  .footer-right {
+    width: 33%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      width: 100%;
+      height: 400px;
+      flex-direction: none;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .address {
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid;
+    outline: 1px solid;
+    outline-offset: 5px;
+
+    @include tablet {
+      width: 75%;
+      height: auto;
+      padding: 20px;
+      outline: none;
+      outline-offset: none;
+      margin: 0px;
+    }
     p {
-      padding: 0 40px 0 40px;
+      line-height: 2em;
+      margin: 0px;
+    }
+  }
+
+  .icon {
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+    @include tablet {
+      display: none;
+    }
+    img {
+      width: 10%;
+    }
+  }
+
+  // .img-area {
+  //   width: 100%;
+  //   @include tablet {
+  //     display: none;
+  //   }
+  // }
+
+  .Copyright {
+    width: 100%;
+    height: 80px;
+    font-family: 小塚ゴシック Pr6N;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include tablet {
+      height: 120px;
+      p {
+        padding: 0 40px 0 40px;
+      }
     }
   }
 }
